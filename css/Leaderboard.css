@@ -1,0 +1,19 @@
+body {
+    background-color: #f8f9fa; /* Light background color */
+}
+
+.container {
+    max-width: 800px; /* Limit container width */
+}
+
+.table {
+    margin-top: 20px; /* Space above the table */
+}
+
+h1 {
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.text-center p {
+    font-size: 1.2em; /* Slightly larger text for descriptions */
+}

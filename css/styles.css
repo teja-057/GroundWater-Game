@@ -1,0 +1,165 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Full Height Body to Ensure Footer Sticks at the Bottom */
+  html, body {
+    height: 100%;
+  }
+  #home{
+    padding-top: 100px;
+    min-height: 100%;
+  }
+  /* Footer should be at the bottom */
+  #footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #343a40;
+    color: white;
+  }
+  
+  /* Ensure the content has some spacing and is centered */
+  .container {
+    margin-top: 50px;
+  }
+  
+  /* Styling for Cards */
+  .card {
+    background-color: #f8f9fa;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card .btn {
+    width: 100%;
+  }
+  
+  /* Navbar Customization */
+  .navbar {
+    margin-bottom: 20px;
+  }
+  
+  .navbar-nav .nav-item .nav-link {
+    color: #fff !important;
+  }
+  
+  .navbar-nav .nav-item .nav-link:hover {
+    color: #d1d1d1 !important;
+  }
+/* styles.css */
+
+
+/* Navbar Styling */
+.navbar {
+    position: fixed; /* Make navbar sticky */
+    top: 0; /* Stick it to the top */
+    background-color: #333;
+    padding: 10px;
+    z-index: 1000; /* Ensure navbar stays on top of other content */
+    width: 100%;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* About Section */
+.about-section {
+    min-height: 100%;
+    padding: 100px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.about-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-section ul li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Contact Section */
+.contact-section {
+    min-height: 100%;
+    padding: 100px;
+    background-color: #e0e0e0;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.contact-section div {
+    margin-bottom: 20px;
+}
+
+.contact-section a {
+    color: #333;
+    text-decoration: none;
+}
+
+.contact-section a:hover {
+    text-decoration: underline;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  margin-top: 100px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+button {
+  margin-top: 10px;
+}
+
+.d-none {
+  display: none;
+}
+#feedback, #login{
+  padding-top: 200px;
+  min-height: 100%;
+}
+.middle_tez{
+  display: flex;
+  justify-content: center;
+}

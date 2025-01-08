@@ -1,0 +1,23 @@
+body {
+    background-color: #f8f9fa; /* Light background color */
+}
+
+.container {
+    max-width: 900px; /* Limit container width */
+}
+
+h1 {
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.card {
+    margin-bottom: 15px; /* Space between video cards */
+}
+
+.list-group-item a {
+    text-decoration: none; /* Remove underline from links */
+}
+
+.list-group-item a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}

@@ -1,0 +1,15 @@
+body {
+    background-color: #f8f9fa; /* Light background color */
+}
+
+.container {
+    max-width: 600px; /* Limit container width */
+}
+
+h1 {
+    margin-bottom: 20px; /* Space below heading */
+}
+
+#userDetails p {
+    font-size: 1.2em; /* Larger text for details */
+}
