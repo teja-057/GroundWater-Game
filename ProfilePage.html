@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/ProfilePage.css"> <!-- Add your CSS file here -->
+</head>
+<body>
+  <div class="container mt-5">
+      <h1 class="text-center">User Profile</h1>
+      <div id="userDetails" class="text-center mt-4"></div>
+      <button class="btn btn-secondary mt-3" onclick="logout()">Logout</button>
+      <button class="btn btn-primary mt-3" onclick="goToGamePage()">Go to Game Page</button> <!-- New Button -->
+  </div>
+
+  <script>
+      // Function to fetch and display user details
+      function displayUserProfile() {
+          const user = JSON.parse(sessionStorage.getItem('user'));
+          if (user) {
+              document.getElementById('userDetails').innerHTML = `
+                  <p><strong>Username:</strong> ${user.username}</p>
+                  <p><strong>Email:</strong> ${user.email}</p>
+                  <p><strong>Score:</strong> ${user.scores}</p>
+              `;
+          } else {
+              document.getElementById('userDetails').innerText = "No user is logged in.";
+          }
+      }
+
+      // Logout function to clear session storage and redirect to login page
+      function logout() {
+          sessionStorage.removeItem('user');
+          window.location.href = 'index.html'; // Redirect to Login page
+      }
+
+      // Function to redirect to Game Page
+      function goToGamePage() {
+          window.location.href = 'GamePage.html'; // Redirect to Game Page
+      }
+
+      // Call the function on page load
+      displayUserProfile();
+  </script>
+</body>
+</html>
